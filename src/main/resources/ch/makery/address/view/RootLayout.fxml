@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.RootController">
+   <top>
+      <MenuButton alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: white; -fx-border-color: gray; -fx-border-radius: 10; -fx-background-radius: 10;" text="Navigation" textAlignment="CENTER" wrapText="true" BorderPane.alignment="CENTER">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#logOut" text="Log Out" />
+          <MenuItem mnemonicParsing="false" onAction="#returnMain" text="Main Page" />
+            <MenuItem mnemonicParsing="false" onAction="#deletePage" text="Delete Item(s)" />
+            <MenuItem mnemonicParsing="false" onAction="#paymentPage" text="Payment Page" />
+        </items>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+         <effect>
+            <SepiaTone />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MenuButton>
+   </top>
+</BorderPane>
